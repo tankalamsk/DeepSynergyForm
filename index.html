@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Form</title>
+  <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+  <div class="form-container">
+    
+    <form id="myForm">
+        <h1>Contact</h1>
+      <div class="form-row">
+        <div class="form-column">
+          <label for="firstName">First Name *</label>
+          <input type="text" id="firstName" required>
+
+          <label for="lastName">Last Name *</label>
+          <input type="text" id="lastName" required>
+
+          <label for="email">Email *</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-column">
+          <label for="companyName">Company Name *</label>
+          <input type="text" id="companyName" required>
+
+          <label for="jobTitle">Job Title *</label>
+          <input type="text" id="jobTitle" required>
+
+          <label for="likeTo">I'd like to *</label>
+          <select id="likeTo" required>
+            <option value="finance">Finance my tech stack</option>
+            <option value="offerFinancing">Offer contract financing to my customers</option>
+            <option value="somethingElse">Something else</option>
+          </select>
+        </div>
+      </div>
+
+      <label for="howDidYouHear">How did you hear about us? *</label>
+      <textarea id="howDidYouHear" rows="3" required></textarea>
+
+      <label for="additionalInfo">Anything else you'd like us to know</label>
+      <textarea id="additionalInfo" rows="3"></textarea>
+
+      <div class="note">Note: Fields marked with * are mandatory.</div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="form.js"></script>
+</body>
+</html>
